@@ -238,6 +238,7 @@ describe('Redeem test suite', function () {
       await buySharesTx.wait();
       const timeFrameTx = await redeemSharesActionTimeFrame.getCurrentTimeframe(comptrollerProxy);
       expect(timeFrameTx).to.equal(0);
+      // Withdrawn shares via redeemSharesDetailed
       const redeemTx = await comptrollerLib.redeemSharesDetailed(utils.parseEther('0.1'), [], []);
       const redeemReceipt = await redeemTx.wait();
       await advanceTime(20 * DAY);

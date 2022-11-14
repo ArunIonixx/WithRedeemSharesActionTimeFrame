@@ -1,0 +1,23 @@
+{
+  "name": "fndz_redeemshortvalidation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0",
+    "istanbul-combine-updated": "^0.3.0",
+    "solidity-bytes-utils": "^0.8.0"
+  }
+}

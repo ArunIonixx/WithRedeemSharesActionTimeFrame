@@ -1,0 +1,36 @@
+# ignore log output
+*.log
+
+# ignore all dotfiles except the whitelisted ones
+.*
+!.env.example
+!.changeset
+!.github
+!.gitignore
+!.gitattributes
+!.prettierignore
+!.prettierrc
+!.eslintignore
+!.solhint.json
+!.chainId
+!.mocharc.json
+!.nvmrc
+!.openzeppelin/unknown-56.json
+
+# ignore build output and dependencies
+codegen/
+dist/
+cache/
+artifacts/
+deployments/
+coverage/
+coverage_temp/
+node_modules/
+coverage.json
+
+# ignore python virtual environment
+scripts/env
+
+# Config files
+deployment-config.*.js
+!deployment-config.template.js
